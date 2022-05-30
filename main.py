@@ -1,18 +1,13 @@
-import requests
+from alerts_and_events import darvo_deal
 from open_worlds import cambion_status
 from open_worlds import cetus_status
 from alerts_and_events import get_fissures
 
-response_darvo = requests.get("https://api.warframestat.us/pc/en/dailyDeals")
-darvo_data = response_darvo.json()[0]
-darvo_deal = f"""\nCurrent Darvo Deal is the {darvo_data['item']} sold for {darvo_data['salePrice']} plat
-at a {darvo_data['discount']}% discount and will change in {darvo_data['eta']}\n"""
-
-qqq = ""
 
 
-def inquiry(user_input):
 
+
+def inquiry():
     inquire = True
     while inquire:
         user_input = input("Type in your command. 'help' for help, 'exit' to exit:")
@@ -35,4 +30,4 @@ def inquiry(user_input):
 
 
 
-inquiry(qqq)
+inquiry()
