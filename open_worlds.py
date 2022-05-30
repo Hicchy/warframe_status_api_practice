@@ -9,4 +9,4 @@ cetus_status = f"\nIt is currently {cetus_data['state']} in Cetus and will chang
 
 response_cambion = requests.get("https://api.warframestat.us/pc/cambionCycle")
 cambion_data = response_cambion.json()
-cambion_status = f"It is currently {cambion_data['active']} in Cambion Drift and will change in {cambion_data['timeLeft']}\n"
+cambion_status = f"\nIt is currently {cambion_data['active']} in Cambion Drift and will change in {cambion_data['timeLeft']}\n"
